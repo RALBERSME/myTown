@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: url("https://cdn.pixabay.com/photo/2023/09/10/15/15/flowers-8245210_640.png");
+}
+.container {
+  margin: 2.5%;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 2%;
+}
+.bodyCard {
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+h1 {
+  color: orange;
+  display: flex;
+  padding: 15px;
+}
+h2 {
+  color: black;
+}
+.card {
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 80%;
+  height: 200px;
+  margin: 50px 10%;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+.card:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.card.show {
+  transform: translateX(0);
+}
+.contentWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(194, 245, 171);
+}
+section {
+  height: 100vh;
+}
+#intro {
+  margin-top: 2%;
+  margin-bottom: 1%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+#intro a {
+  text-decoration: none;
+  color: rgb(14, 60, 242);
+}
+#intro a:hover {
+  color: orangered;
+  font-weight: bold;
+}
+.comments {
+  position: absolute;
+  top: 11%;
+  right: 20px;
+  width: 30%;
+  padding: 1.8%;
+  background-color: rgb(226, 248, 226);
+  border-radius: 10px;
+}
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 1100px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 70px;
+  width: 70px;
+  margin: 0 2px;
+  background-color: rgb(54, 88, 54);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-image: url("images/Mainzel.png");
+  background-position: 50% 70%;
+  background-size: contain;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}

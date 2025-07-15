@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  color: black;
+  overflow: hidden;
+  background: url("images/Maaraue.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 70%;
+  position: relative;
+}
+.animation {
+  height: 50vh;
+  width: 80%;
+  position: absolute;
+}
+.bluesky {
+  height: 110vh;
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 100vw;
+  background: radial-gradient(ellipse at center, #dbb800 0%, #8abfeb 20%);
+  background: url("https://cdn.pixabay.com/photo/2021/01/19/09/32/clouds-5930599_640.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: sky 12s forwards;
+  animation-delay: 4s;
+}
+@keyframes sky {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(0%, -120%);
+  }
+}
+
+.grass {
+  width: 50vmin;
+  height: 50vmin;
+  position: absolute;
+  overflow: hidden;
+  transform: translate(-50%, 20%) translate3d(0, 0, 0);
+  bottom: 0;
+  animation: earth 10s forwards;
+  animation-delay: 4s;
+}
+@keyframes earth {
+  0% {
+    transform: translate(-50%, 20%);
+  }
+  100% {
+    transform: translate(-50%, 70%);
+  }
+}
+.grass__blade {
+  position: absolute;
+}
+.grass__blade--1 {
+  border-right: 2vmin solid #266f5d;
+  border-top-right-radius: 20%;
+  height: 290%;
+  width: 150%;
+  bottom: -230%;
+  left: -130%;
+  animation: move-blade-1 10s infinite;
+}
+@keyframes move-blade-1 {
+  0%,
+  30%,
+  50%,
+  55%,
+  82%,
+  97%,
+  100% {
+    border-top-right-radius: 18%;
+  }
+  20% {
+    border-top-right-radius: 13%;
+  }
+  40% {
+    border-top-right-radius: 8%;
+  }
+  70% {
+    border-top-right-radius: 8.5%;
+  }
+  90% {
+    border-top-right-radius: 10.5%;
+  }
+}
+.grass__blade--2 {
+  border-right: 3vmin solid #3eee5e;
+  border-top-right-radius: 20%;
+  height: 300%;
+  width: 200%;
+  bottom: -230%;
+  left: -150%;
+  animation: move-blade-2 10s infinite;
+}
+@keyframes move-blade-2 {
+  0%,
+  30%,
+  50%,
+  55%,
+  82%,
+  97%,
+  100% {
+    border-top-right-radius: 20%;
+  }
+  20% {
+    border-top-right-radius: 15%;
+  }
+  40% {
+    border-top-right-radius: 10%;
+  }
+  70% {
+    border-top-right-radius: 10.5%;
+  }
+  90% {
+    border-top-right-radius: 12.5%;
+  }
+}
+.grass__blade--3 {
+  border-right: 3vmin solid #93bd21;
+  border-top-right-radius: 20%;
+  height: 300%;
+  width: 160%;
+  bottom: -230%;
+  left: -120%;
+  animation: move-blade-3 10s infinite;
+}
+@keyframes move-blade-3 {
+  0%,
+  30%,
+  50%,
+  55%,
+  82%,
+  97%,
+  100% {
+    border-top-right-radius: 20%;
+  }
+  20% {
+    border-top-right-radius: 15%;
+  }
+  40% {
+    border-top-right-radius: 10%;
+  }
+  70% {
+    border-top-right-radius: 10.5%;
+  }
+  90% {
+    border-top-right-radius: 12.5%;
+  }
+}
+.grass__blade--4 {
+  border-top-left-radius: 15%;
+  border-left: 3vmin solid #7c1731;
+  height: 300%;
+  width: 200%;
+  bottom: -30%;
+  left: -120%;
+  animation: move-blade-4 10s infinite;
+}
+@keyframes move-blade-4 {
+  0%,
+  30%,
+  50%,
+  55%,
+  82%,
+  97%,
+  100% {
+    border-top-left-radius: 12%;
+  }
+  20% {
+    border-top-left-radius: 20%;
+  }
+  40% {
+    border-top-left-radius: 15.5%;
+  }
+  70% {
+    border-top-left-radius: 16.5%;
+  }
+  90% {
+    border-top-left-radius: 19%;
+  }
+}
+.grass__blade--5 {
+  border-top-left-radius: 15%;
+  border-left: 3vmin solid #31266f;
+  height: 360%;
+  width: 200%;
+  bottom: -300%;
+  left: 50%;
+  animation: move-blade-5 10s infinite;
+}
+@keyframes move-blade-5 {
+  0%,
+  30%,
+  50%,
+  55%,
+  82%,
+  97%,
+  100% {
+    border-top-left-radius: 15%;
+  }
+  20% {
+    border-top-left-radius: 22%;
+  }
+  40% {
+    border-top-left-radius: 17.5%;
+  }
+  70% {
+    border-top-left-radius: 18.5%;
+  }
+  90% {
+    border-top-left-radius: 21%;
+  }
+}
+.grass__blade--6 {
+  border-top-left-radius: 15%;
+  border-left: 3vmin solid #b95b1b;
+  height: 360%;
+  width: 200%;
+  bottom: -300%;
+  left: 40%;
+  animation: move-blade-6 10s infinite;
+}
+@keyframes move-blade-6 {
+  0%,
+  30%,
+  50%,
+  55%,
+  82%,
+  97%,
+  100% {
+    border-top-left-radius: 15%;
+  }
+  20% {
+    border-top-left-radius: 22%;
+  }
+  40% {
+    border-top-left-radius: 17.5%;
+  }
+  70% {
+    border-top-left-radius: 18.5%;
+  }
+  90% {
+    border-top-left-radius: 21%;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.card__wrapper {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0%;
+  left: -100%;
+  padding: 1.5%;
+  background-image: url("https://cdn.pixabay.com/photo/2016/04/01/09/03/floral-1299131_640.png");
+  display: none;
+  justify-content: center;
+  animation: flyIn 5s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes flyIn {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+.card {
+  background-color: rgb(247, 247, 206);
+  padding: 5%;
+  display: flex;
+}
+.card_body {
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5%;
+  width: 30%;
+  font-size: 1.2rem;
+}
+.buttons {
+  margin: 15px 0;
+}
+.round {
+  width: 50px;
+  height: 50px;
+  padding: 0px 12.5px 5px 12.5px;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(139, 235, 76);
+  border-radius: 50%;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  box-shadow: 5px 5px 3px 3px rgba(0, 0, 0, 0.4);
+}
+.round:hover {
+  transform: scale(0.9);
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.4);
+}
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: green;
+}
+a:hover {
+  color: orange;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid orange;
+  font-weight: bold;
+  white-space: nowrap;
+}
+#MaaraueImage:hover {
+  transform: scale(2.7) translateX(80px) translateY(90px);
+}

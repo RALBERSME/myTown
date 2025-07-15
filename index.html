@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>myTown</title>
+  </head>
+  <body>
+    <!-- Mobile Message -->
+    <div class="mobile-message">
+      <h2 style="color: white">
+        Please use application <br />on large screen <br />(PC or laptop screen)
+      </h2>
+    </div>
+    <header>
+      <nav class="nav collapsible">
+        <marquee class="nav__brand" behavior="" direction="left"
+          ><img src="images/bee.png" alt="" width="150px" height="150px"
+        /></marquee>
+        <i class="nav__toggler fa-solid fa-burger"></i>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="oldTown.html">Old Town</a></li>
+          <li class="nav__item">
+            <a href="Maaraue.html">Maaraue (floodplain)</a>
+          </li>
+          <li class="nav__item"><a href="Culture.html">Culture</a></li>
+          <li class="nav__item"><a href="History.html">History</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid-cols-2">
+        <header class="block_header hero_content">
+          <h1 class="block__heading">Welcome to Mainz</h1>
+          <p class="hero__tagline">
+            and Mainz-Kastel (which is part of Wiesbaden)
+          </p>
+        </header>
+        <div class="block__images" data-aos="zoom-in">
+          <img
+            width="650px"
+            height="400px"
+            class="hero__image"
+            src="images/Mainz1.jpg"
+            alt=""
+          /><img
+            width="250px"
+            height="250px"
+            class="hero__image"
+            src="images/satisfaction.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section class="block container block-domain">
+      <header class="block__header">
+        <h2 data-aos="fade-up">Start your trip through the city</h2>
+        <p>
+          You have no idea where Mainz is? Perhaps you've never heard of this
+          city?
+        </p>
+      </header>
+      <div class="input-group">
+        <input
+          type="text"
+          class="input"
+          placeholder="Ask for map and press Search Button"
+        />
+        <button
+          onclick="
+          window.open('https://www.falk.de/stadtplan/mainz?mz=12.3&mp=50.00062_8.27241','_blank')"
+          ;
+          data-aos="fade-right"
+          class="btn btn--accent"
+        >
+          <img src="images/cartoon.png" alt="" class="icon icon--primary" />
+          Search
+        </button>
+      </div>
+    </section>
+
+    <section data-aos="fade-up" class="block container block-plans">
+      <div class="grid grid__cols-3">
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Visit</h3>
+              <span class="plan__price">Old town Mainz</span>
+
+              <span class="badge badge--secondary badge--small"
+                >over 2000 years</span
+              ><br /><br />
+              <span class="plan__description">Start at the cathedral</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Cathedral Square with Cathedral</li>
+
+                <li class="list__item">Augustinergasse</li>
+                <li class="list__item">Beaches on the Rhine</li>
+                <li class="list__item">various museums</li>
+              </ul>
+              <button
+                onclick="window.location.href='oldTown.html'"
+                style="box-shadow: 2px 2px 2px 2px rgb(173, 173, 173)"
+                class="btn btn--outline btn--block"
+              >
+                Start now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in">
+          <div class="plan plan--popular">
+            <div class="card card--primary">
+              <header class="card__header">
+                <h3 class="plan__name">Visit</h3>
+                <span class="plan__price">Maaraue Kastel</span>
+
+                <span class="badge badge--primary badge--small"
+                  >Recreation area</span
+                ><br /><br />
+                <span class="plan__description">Start at Kastel`s Beach</span>
+              </header>
+              <div class="card__body">
+                <ul class="list list--tick">
+                  <li class="list__item">Outdoor pool</li>
+                  <li class="list__item">Campsite</li>
+                  <li class="list__item">Park with barbecue areas</li>
+                  <li class="list__item">Various sports clubs</li>
+                </ul>
+                <button
+                  style="box-shadow: 2px 2px 2px 2px rgb(173, 173, 173)"
+                  class="btn btn--outline"
+                  onclick="window.location.href='Maaraue.html'"
+                >
+                  Start Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Visit</h3>
+              <span class="plan__price">Cultural events</span>
+
+              <span class="badge badge--secondary badge--small"
+                >Leisure activities</span
+              ><br /><br />
+              <span class="plan__description"
+                >Carnival, wine festivals and more</span
+              >
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Carnival clubs and parades</li>
+                <li class="list__item">Wine festivals</li>
+                <li class="list__item">St. John's Day and fair</li>
+                <li class="list__item">Mainz lives on its squares</li>
+              </ul>
+              <button
+                onclick="window.location.href='Culture.html'"
+                style="box-shadow: 2px 2px 2px 2px rgb(173, 173, 173)"
+                class="btn btn--outline btn--block"
+              >
+                Start Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block container">
+      <header class="block__header">
+        <h2>The eye-catchers</h2>
+        <p>
+          The cathedral and Christ Church are visible from afar. Those entering
+          the city via the Theodor Heuss Bridge can admire the state parliament
+          building.
+        </p>
+      </header>
+      <article class="grid grid__cols-2 feature">
+        <div class="feature__content" data-aos="fade-right">
+          <span class="icon-container">
+            <img
+              data-aos="zoom-in-left"
+              src="images/uhu.png"
+              alt=""
+              class="icon icon--primary"
+            />
+          </span>
+          <h3 class="feature__heading">Mainz Cathedral</h3>
+          <p>
+            Mainz Cathedral, officially known as the Catholic Church of St.
+            Martin, was built in the 10th century and is one of the oldest
+            Gothic cathedrals in Germany. Located in the center of Mainz, it is
+            approximately 130 meters long, making it one of the largest churches
+            in Germany. The cathedral has been expanded and restored several
+            times over the centuries, with the current structure dating
+            primarily from the 13th to 15th centuries. Particularly noteworthy
+            are the magnificent stained glass windows created in the 13th
+            century and the famous cathedral treasury, which contains valuable
+            works of art.
+          </p>
+          <a
+            href="https://en.wikipedia.org/wiki/Mainz_Cathedral"
+            target="_blank"
+            class="link-arrow"
+            >Learn More</a
+          >
+        </div>
+
+        <img data-aos="fade-left" src="images/Mainz6.jpg" alt="" />
+      </article>
+      <article class="grid grid__cols-2 feature">
+        <div class="feature__content">
+          <span class="icon-container">
+            <img
+              data-aos="fade-right"
+              src="images/uhu.png"
+              alt=""
+              class="icon icon--primary"
+            />
+          </span>
+          <h3 class="feature__heading">Evangelical Christ Church</h3>
+          <p>
+            The Evangelical Christ Church in Mainz was completed in 1894 and is
+            a significant neo-Gothic building. Located in downtown Mainz, it
+            serves as a place of worship and a cultural meeting place for the
+            Protestant community. The church is approximately 60 meters long and
+            impresses with its delicate stained glass windows and its tall,
+            65-meter tower. Inside, the church seats approximately 800
+            worshipers and is known for its diverse cultural events.
+          </p>
+          <a
+            href="https://www.rheinhessen.de/en/a-christ-church-mainz"
+            target="_blank"
+            class="link-arrow"
+            >Learn More</a
+          >
+        </div>
+        <img data-aos="fade-left" src="images/Mainz5.jpg" alt="" />
+      </article>
+      <article class="grid grid__cols-2 feature">
+        <div class="feature__content">
+          <span class="icon-container">
+            <img
+              data-aos="fade-left"
+              src="images/uhu.png"
+              alt=""
+              class="icon icon--primary"
+            />
+          </span>
+          <h3 class="feature__heading">The Theodor Heuss Bridge</h3>
+          <p>
+            The Theodor Heuss Bridge is a major road bridge connecting Mainz and
+            Wiesbaden over the Rhine. It was originally opened in 1948, after
+            World War II, replacing an older bridge destroyed in the war. The
+            bridge is approximately 1,200 meters long and consists of multiple
+            lanes, facilitating traffic flow between the two cities. It bears
+            the name of the first Federal President of the Federal Republic of
+            Germany, Theodor Heuss, who was also born in Mainz. The Theodor
+            Heuss Bridge is an important transport link in the Rhine-Main region
+            and significantly shapes the cityscape of Mainz.
+          </p>
+          <a
+            href="https://en.wikipedia.org/wiki/Theodor_Heuss_Bridge_(Mainz-Wiesbaden)"
+            target="_blank"
+            class="link-arrow"
+            >Learn More</a
+          >
+        </div>
+        <img data-aos="fade-right" src="images/Mainz4.jpg" alt="" />
+      </article>
+      <article class="grid grid__cols-2 feature">
+        <div class="feature__content">
+          <span class="icon-container">
+            <img
+              data-aos="fade-right"
+              src="images/uhu.png"
+              alt=""
+              class="icon icon--primary"
+            />
+          </span>
+          <h3 class="feature__heading">The State Parliament</h3>
+          <p>
+            The Rhineland-Palatinate State Parliament is located on the Rhine in
+            Mainz's historic center, in the impressive 18th-century Deutschhaus.
+            This Baroque building has been extensively restored and now combines
+            modern parliamentary functions with historic charm. Visitors can
+            explore the building through guided tours and participate in events
+            like open days and educational programs. The Deutschhaus symbolizes
+            democracy and political history in the region. Overall, it is both a
+            political institution and a cultural landmark that enriches Mainz.
+          </p>
+          <a
+            href="https://www.rheinhessen.de/en/a-landtag-rhineland-palatinate"
+            target="_blank"
+            class="link-arrow"
+            >Learn More</a
+          >
+        </div>
+        <img data-aos="fade-left" src="images/Mainz8.jpg" alt="" />
+      </article>
+    </section>
+    <section class="block block--dark2 block--skewed-right block-showcase">
+      <header class="block__header">
+        <h2 style="color: white">The State Theatre and Culture in Mainz</h2>
+      </header>
+      <div class="container grid grid__cols-2">
+        <div class="block-showcase__image">
+          <img data-aos="fade-right" src="images/Mainz2.jpg" alt="" />
+        </div>
+        <ul class="list" data-aos="fade-up">
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <img
+                  data-aos="zoom-in"
+                  src="images/bee.png"
+                  alt=""
+                  class="icon icon--primary"
+                />
+              </div>
+              <div class="media__body">
+                <h3 style="color: white" class="media__title">
+                  State Theater of Mainz
+                </h3>
+                <p>
+                  The theater was requested by the citizens of Mainz and built
+                  between 1829 and 1833. The Great Hall was destroyed by bombing
+                  during World War II and restored between 1976 and 1977, with
+                  Dieter Oesterlen restoring Georg Moller's rotunda.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <img src="images/bee.png" alt="" class="icon icon--primary" />
+              </div>
+              <div class="media__body">
+                <h3 style="color: white" class="media__title">
+                  The Roman Theater
+                </h3>
+                <p>
+                  Not far from the Zeitrum, excavations unearthed the remains of
+                  a stage theater (Roman theater), considered the largest of its
+                  kind north of the Alps. It was probably built in the 1st
+                  century AD and could seat approximately 10,000 spectators. The
+                  theater served as a venue for theatrical performances, but
+                  also for commemorations of Drusus, the founder of the city.
+                  The Roman theater in Mainz was an impressive structure with a
+                  stage width of approximately 42 meters and an auditorium 116
+                  meters in diameter. After the end of Roman rule, the theater
+                  fell into disuse, and parts of it were demolished. In the
+                  Middle Ages, the vaults served as catacombs for burials. Since
+                  the end of the 20th century, the remains of the theater have
+                  been systematically excavated and researched.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block" data-aos="zoom-in">
+      <header class="block__header">
+        <h2>The old Father Rhine</h2>
+        <p>
+          The Rhine is one of Europe's most important rivers and is
+          approximately 1,230 kilometers long. It originates in the Swiss Alps
+          at Lake Toma in the canton of Graubünden and flows through
+          Switzerland, Germany, France, and the Netherlands before emptying into
+          the North Sea. The Rhine is an important waterway for trade and
+          shipping in Europe. It shapes numerous cities and landscapes along its
+          course, including Basel, Mainz,Cologne and Rotterdam. The video shows
+          the Rhine Falls near Schaffhausen (Switzerland).
+        </p>
+      </header>
+      <div class="container">
+        <div class="card testimonial">
+          <div class="grid grid__cols-2">
+            <div class="testimonial__image">
+              <video width="620" loop height="440" autoplay muted>
+                <source src="images/Rhein.mp4" type="video/mp4" />
+                <source src="images/Rhein.mp4" type="video/ogg" />
+                Your browser does not support the video tag.
+              </video>
+
+              <span class="icon-container"
+                ><img
+                  data-aos="flip-right"
+                  src="images/uhu.png"
+                  alt=""
+                  class="icon icon--primary"
+              /></span>
+            </div>
+            <blockquote class="quote">
+              <p class="quote__text">
+                And when I reached the Rhine-bridge, Where stands the harbour
+                bastion, There, in the moonlight, I could see The father Rhine
+                flowing on.
+                <br />
+                Greetings to you, old father Rhine, Tell me, how have things
+                been going? I have often thought of you, With deep yearning and
+                longing..
+              </p>
+              <footer>
+                <div class="media">
+                  <div class="media__image">
+                    <span class="icon-container"
+                      ><img
+                        src="images/hand.png"
+                        alt=""
+                        class="icon icon--primary"
+                    /></span>
+                  </div>
+                  <div class="media__body">
+                    <h3 style="color: red" class="media__title quote__author">
+                      Heinrich Heine, 1844
+                    </h3>
+                    <a
+                      href="https://www.heinrich-heine.net/winter/wintereng5.htm"
+                      target="_blank"
+                      class="quote__name"
+                      >read full poem in English translation</a
+                    ><br />
+                    <a
+                      href="https://deutschelyrik.de/zyklus-deutschland-ein-wintermaerchen-caput-v.html"
+                      target="_blank"
+                      class="quote__name"
+                      >lies das ganze Gedicht auf Deutsch</a
+                    >
+                  </div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
+      <div
+        style="background-image: url('images/bgWaves.png')"
+        class="callout callout--primary callout-signup"
+      >
+        <div class="grid grid__cols-2 callout__wrapper" style="margin: -20px">
+          <div class="callout__content">
+            <h2 class="callout__heading">Have we piqued your interest?</h2>
+            <p>
+              Discover Mainz, a fascinating city full of history, culture, and a
+              vibrant atmosphere. Stroll through the charming alleys of the Old
+              Town, past the impressive St. Martin's Cathedral, which dominates
+              the cityscape. Enjoy delicious regional cuisine in cozy
+              restaurants and be enchanted by the Rhine promenade. Mainz offers
+              the perfect blend of tradition and modernity – an experience you
+              shouldn't miss!
+            </p>
+          </div>
+          <a
+            style="border: 2px dotted white; background-color: #29184b"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            href="oldTown.html"
+            class="btn btn--secondary btn--stretched"
+            >Click here to start</a
+          >
+        </div>
+      </div>
+    </div>
+    <footer class="footer" data-aos="zoom-in">
+      <marquee>
+        <img src="images/bee.png" width="200px" height="150px" alt="" />
+        <span class="footer__copy"
+          ><span id="color1">Reinhild's myTown - copyright</span> &copy; 2025
+          all rights reserved</span
+        >
+      </marquee>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

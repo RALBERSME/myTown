@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Maaraue.css" />
+    <title>Maaraue - Mainz-Kastel</title>
+  </head>
+  <body>
+    <div class="container">
+      Maaraue - Mainz-Kastel
+
+      <div class="animation">
+        <div class="bluesky"></div>
+        <div class="grass">
+          <div class="grass__blade grass__blade--1"></div>
+          <div class="grass__blade grass__blade--2"></div>
+          <div class="grass__blade grass__blade--3"></div>
+          <div class="grass__blade grass__blade--4"></div>
+        </div>
+      </div>
+      <div class="card__wrapper hide">
+        <div class="card">
+          <div class="card__body">
+            <h1>Attractions on the Maaraue</h1>
+            <div class="buttons">
+              <button
+                onclick="previousAttraction()"
+                href="#"
+                class="previous round"
+              >
+                &#8249;
+              </button>
+              <button onclick="nextAttraction()" href="#" class="next round">
+                &#8250;
+              </button>
+            </div>
+
+            <img
+              id="MaaraueImage"
+              width="250px"
+              height="250px"
+              style="border-radius: 20px"
+              class="card__image"
+              src="images/Aue1.jpg"
+              alt=""
+            />
+            <p>Hover over pic to enlarge it</p>
+          </div>
+          <div class="card_body">
+            <h2 class="card__title">Outdoor pool</h2>
+            <a
+              class="card__more"
+              href="https://www.mattiaqua.de/baeder/maaraue/"
+              target="_blank"
+              >>> read more</a
+            >
+
+            <a href="Culture.html">>> continue to culture page</a>
+            <span class="card__description"
+              >The Maaraue outdoor pool welcomes many bathers, both big and
+              small. It's clear: Here, maximum stands for true size. The Maaraue
+              invites you to indulge in a generous 50,000 square meters of
+              sunbathing areas, has numerous play and sports areas for active
+              guests, and offers immense water fun with a 50-meter swimming
+              pool, diving bay, 75-meter non-swimmer pool, and a spacious
+              paddling area. What's more, the Maaraue outdoor pool offers
+              barrier-free access.</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Maaraue.js"></script>
+  </body>
+</html>
