@@ -39,7 +39,7 @@ const MaaraueArray = [
     card__title: "Allotment gardens",
     card__image: "images/Aue2.jpg",
     card__description:
-      "Allotment gardens, also known as allotment gardens, have a long tradition in Germany, dating back to the 19th century. The first known allotment garden was established in Leipzig in 1864 to provide urban workers with a means of self-sufficiency and recreation. Over time, allotment gardens became increasingly popular, especially after the First World War, as urbanization increased and people sought green oases. Today, there are over 1.4 million allotment gardens in Germany, used by around 800,000 people. ",
+      "Allotment gardens have a long tradition in Germany, dating back to the 19th century. The first known allotment garden was established in Leipzig in 1864 to provide urban workers with a means of self-sufficiency and recreation. Over time, allotment gardens became increasingly popular, especially after the First World War, as urbanization increased and people sought green oases. Today, there are over 1.4 million allotment gardens in Germany, used by around 800,000 people. ",
     card__more:
       "https://cdn.pixabay.com/photo/2010/12/07/08/allotment-1059_640.jpg",
   },
