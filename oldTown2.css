@@ -89,6 +89,7 @@ body {
 
 .text {
   font-size: 1.35rem;
+  padding-left: 5px;
 }
 .image {
   padding-left: 20px;
