@@ -7,7 +7,7 @@ body {
   height: 100vh;
   color: black;
   overflow: hidden;
-  background: url("images/Maaraue.jpg");
+  background: url("images/SpielenAue.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 70%;
@@ -25,7 +25,7 @@ body {
   left: 0;
   width: 100vw;
   background: radial-gradient(ellipse at center, #dbb800 0%, #8abfeb 20%);
-  background: url("https://cdn.pixabay.com/photo/2021/01/19/09/32/clouds-5930599_640.png");
+  background: url("images/clouds.png");
   background-repeat: no-repeat;
   background-size: cover;
   animation: sky 12s forwards;
@@ -265,11 +265,11 @@ body {
   top: 0%;
   left: -100%;
   padding: 1.5%;
-  background-image: url("https://cdn.pixabay.com/photo/2016/04/01/09/03/floral-1299131_640.png");
+  background-image: url("images/flowers.png");
   display: none;
   justify-content: center;
-  animation: flyIn 5s forwards;
-  animation-delay: 1s;
+  animation: flyIn 6s forwards;
+  animation-delay: 5s;
 }
 
 @keyframes flyIn {

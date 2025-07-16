@@ -132,3 +132,12 @@ function setData(count) {
   cardImage.setAttribute("src", MaaraueArray[count].card__image);
   cardDescription.textContent = MaaraueArray[count].card__description;
 }
+
+setTimeout(() => {
+  const body = document.querySelector("body");
+  body.style.background = "url('images/Grillbild.jpg')";
+  body.style.backgroundRepeat = "no-repeat";
+  body.style.backgroundSize = "cover";
+  body.style.backgroundPosition = "50% 70%";
+  body.style.transition = "background .3s";
+}, 13000);

@@ -19,7 +19,7 @@ body {
   min-height: 65vh;
   max-width: 1000px;
   border-radius: 50%;
-  background-image: url("https://cdn.pixabay.com/photo/2014/05/18/00/18/grass-346644_1280.png");
+  background-image: url("images/lawn.png");
   margin: 1rem auto 35vh;
   position: relative;
 
@@ -29,7 +29,7 @@ body {
     left: calc(var(--rim-width) * -1);
     height: 65vh;
     border-radius: 0 0 45vh 45vh;
-    background-image: url("https://cdn.pixabay.com/photo/2014/05/18/00/18/grass-346644_1280.png");
+    background-image: url("images/lawn.png");
     display: block;
     top: 50%;
     position: absolute;
